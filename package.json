@@ -1,0 +1,48 @@
+{
+    "name": "glashatay-node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --files --exec ts-node -r tsconfig-paths/register src/server.ts",
+        "build": "tsc",
+        "start": "node -r tsconfig-paths/register dist/server.js",
+        "lint": "eslint src --ext .ts",
+        "lint:fix": "eslint src --ext .ts --fix",
+        "format": "prettier --write src/**/*.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/jsonwebtoken": "^9.0.9",
+        "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "helmet": "^8.1.0",
+        "http-errors": "^2.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.13.1",
+        "morgan": "^1.10.0",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.1",
+        "@types/http-errors": "^2.0.4",
+        "@types/mongoose": "^5.11.96",
+        "@types/morgan": "^1.9.9",
+        "@types/node": "^22.13.14",
+        "@typescript-eslint/eslint-plugin": "^8.28.0",
+        "@typescript-eslint/parser": "^8.28.0",
+        "eslint": "^9.23.0",
+        "eslint-config-prettier": "^10.1.1",
+        "eslint-plugin-prettier": "^5.2.5",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.3",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.8.2"
+    }
+}
